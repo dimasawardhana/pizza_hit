@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pembayaran</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+  <link rel="shortcut icon" href="logo.ico">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'>
+
+    <link rel="stylesheet" type="text/css" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700|Open+Sans:700' rel='stylesheet' type='text/css'>
+  <script src="js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    body {
+      background: url(images/walppizza.jpg);
+      background-repeat:  no-repeat; 
+      background-size:cover;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .spacing {
+  padding-top:7px;
+  padding-bottom:7px;
+}
+.middlePage {
+    width: 780px;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    p, li{
+      margin-bottom: 0px;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body style="">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" ><img src="images/logo.jpg" style="height: 40px; width: 40px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Hot Promo</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="poin.html">Poin</a></li>
+        <li><a href="tentangkami.html">Tentang Kami</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="profil.html">
+          <img src="images/picTeam/D.png" class="img-circle" style="height: 40px; width: 40px;">
+        Hai Dimas
+        </a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="middlePage">
+  <div class="page-header">
+    <h1 class="logo"><i class="fa fa-cc-paypal"></i><span class="logo" style="color: white;"> PAY DOKU</h1>
+  </div>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">Isi pembayaran untuk </h3>
+        </div>
+        <div class="panel-body" >
+          <div class="row">
+            <div class="col-md-8" style="border-left:1px solid #ccc;" style="padding-top: 100px;">
+              <form class="form-horizontal">
+              <fieldset>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                  <input id="email" type="text" class="form-control" name="email" placeholder="Nomor Kartu Kredit">
+                </div>
+                <br>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                  <input id="email" type="text" class="form-control" name="email" placeholder="Kode Kartu Kredit">
+                </div>
+                <br>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                  <input id="email" type="text" class="form-control" name="email" placeholder="Nama pada Kartu">
+                </div>
+                <br>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-calendar-o"></i></span>
+                  <input id="email" type="text" class="form-control" name="email" placeholder="Tanggal Kadaluarsa Kartu (mm-yyyy)">
+                </div>
+                <br>
+                <div class="input-group">
+                  <span class="input-group-addon">@</span>
+                  <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                </div>
+                <br>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                  <input id="email" type="text" class="form-control" name="email" placeholder="Nomor Telephone">
+                </div>
+                <br>
+                <a href="riwayat.html" class="btn btn-danger col-md-4 pull-right" role="button">Bayar</a>
+              </fieldset>
+              </form>
+            </div>
+            <div class="col-md-4" style="border-left:1px solid #ccc;" style="padding-top: 100px;">
+              <h1 class="text-center">PIZZA HIT</h1>
+              <hr>
+                  <ul class="list-unstyled text-center" style="line-height: 1">
+                      <li> <b> Total Pembayaran</b></li>
+                      <li>Rp300.000</li>
+                      <br>
+                      <li><b> ID Invoice </b></li>
+                      <li>1092836376275</li>
+                   </ul>
+                  <br>
+            </div>
+          </div>
+         </div>
+      </div> 
+</div>
+
+<footer class="container-fluid text-center " style="color: white; background-color: #222222;">
+  <p>© 2017 PT Pizza Hit All Rights reserved.</p>
+</footer>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/bootstrap/tryit.asp?filename=trybs_temp_webpage&stacked=h by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:05:00 GMT -->
+</html>
+

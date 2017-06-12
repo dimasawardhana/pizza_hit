@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Main Page Prototype</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'>
+
+    <link rel="stylesheet" type="text/css" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/custom_1.css">
+    <link rel="shortcut icon" href="images/logo.jpg">
+    
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700|Open+Sans:700' rel='stylesheet' type='text/css'>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+    body {background-image: url(images/background2.jpg); background-repeat: no-repeat; background-size: cover;}
+    p{color: #ffffff}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html" ><img src="images/logo.jpg" style="height: 40px; width: 40px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="index.html">Hot Promo</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="poin.html">Poin</a></li>
+        <li><a href="tentangkami.html">Tentang Kami</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="profil.html">
+          <img src="images/picTeam/D.png" class="img-circle" style="height: 40px; width: 40px;">
+        Hai Dimas
+        </a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+      <div class="col-sm-12"><br></div>
+      <div class="col-sm-1">
+      </div>
+      <div class="col-sm-10" style="background-color: rgba(255,255,255,0.13); opacity: 25%; ">
+          <div id="menu1" class="">
+         <div class="row">
+           <h3 style="color: #ffffff;">Tambahkan Lokasi untuk alamat pengantaran</h3>
+         </div>
+         <div class="row">
+         <div class="col-md-2 col-xs-offset-5"><span class="fa fa-location-arrow fa-5x" ></span></div>
+         </div>
+         <div class="row">
+         <div class="col-md-4 col-xs-offset-4">
+           <a href="" class="btn btn-default btn-md" data-toggle="modal" data-target="#Modal-location"><h4>Gunakan Lokasi saya</h4></a>
+          </div>
+         </div>
+         <hr>
+         <div class="row">
+           <div class="col-md-8 col-xs-offset-2">
+             <input type="text" name="location" id="location" class="form-control" placeholder="Lokasi saya">
+           </div>
+         </div>
+         <br>
+         <div class="row">
+
+         <div class="col-md-4 col-xs-offset-4">
+
+            <a href="profil.html" class="btn btn-block btn-success">Tambahkan Lokasi</a>
+          </div>
+          </div>
+          <br>
+    </div>
+    
+  </div>
+</div>
+
+<footer class="container-fluid text-center " style="color: white; background-color: #222222;">
+  <p>© 2017 PT Pizza Hit All Rights reserved.</p>
+</footer>
+<div id="Modal-location" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"> Use my location </h4>
+      </div>
+      <div class="modal-body">
+        USE LOCATION HERE
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
+
